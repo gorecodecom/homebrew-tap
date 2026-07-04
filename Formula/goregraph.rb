@@ -45,6 +45,6 @@ class Goregraph < Formula
   end
 
   test do
-    system "#{bin}/goregraph", "version"
+    system bin/"goregraph", "version"
   end
 end
