@@ -5,21 +5,21 @@
 class Goregraph < Formula
   desc "Local deterministic code intelligence for safer AI-assisted development"
   homepage "https://github.com/gorecodecom/goregraph"
-  version "1.0.1"
+  version "1.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gorecodecom/goregraph/releases/download/v1.0.1/goregraph_Darwin_x86_64.tar.gz"
-      sha256 "5a7e0613f3786dd4d494d1f8c41056aaf14bd979c56aed8c598484aab02c9bd6"
+      url "https://github.com/gorecodecom/goregraph/releases/download/v1.3.0/goregraph_Darwin_x86_64.tar.gz"
+      sha256 "b84e522ff2971bfe348d5fb38851d6e661a067eeb1fee0a7458b0aef56600425"
 
       define_method(:install) do
         bin.install "goregraph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gorecodecom/goregraph/releases/download/v1.0.1/goregraph_Darwin_arm64.tar.gz"
-      sha256 "473b3dcb6dd462fb2d601f7c1c34434c0ea6c8b2492a906d83de8d99c94bfd25"
+      url "https://github.com/gorecodecom/goregraph/releases/download/v1.3.0/goregraph_Darwin_arm64.tar.gz"
+      sha256 "fe18dcf9a22df7aedca478efd2b07a0b2bbc1043209726ef1ade37f7abb0336e"
 
       define_method(:install) do
         bin.install "goregraph"
@@ -29,15 +29,15 @@ class Goregraph < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gorecodecom/goregraph/releases/download/v1.0.1/goregraph_Linux_x86_64.tar.gz"
-      sha256 "1d2e459f2d3ae12571e1c22d9d184af72488af5a37f7be6540580ac46638e3a7"
+      url "https://github.com/gorecodecom/goregraph/releases/download/v1.3.0/goregraph_Linux_x86_64.tar.gz"
+      sha256 "eddac2ed01be2e85229853e7972e4a33d682a2676b923a4f1a7aeeef6f2594f4"
       define_method(:install) do
         bin.install "goregraph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gorecodecom/goregraph/releases/download/v1.0.1/goregraph_Linux_arm64.tar.gz"
-      sha256 "49f35ee3e067429b7559054b5c51a46a9aa565dbbcba11c9c22aedf20c4c4d12"
+      url "https://github.com/gorecodecom/goregraph/releases/download/v1.3.0/goregraph_Linux_arm64.tar.gz"
+      sha256 "4fb776824c2e2956b46fce0bfbe6a9bf0ab0680b401041be7516e4950cf24f5e"
       define_method(:install) do
         bin.install "goregraph"
       end
